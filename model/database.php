@@ -1,9 +1,10 @@
 <?php
 $dsn = 'mysql:host=localhost;dbname=assignmenttrackerdb';
-$username = 'root';
+$username = 'assignment';
+$password = 'assignment';
 
 try{
-    $db = new PDO($dsn, $username);
+    $db = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
     $error = "Database Error: ";
     $error .= $e->getMessage();
