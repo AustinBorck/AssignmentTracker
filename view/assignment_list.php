@@ -21,7 +21,7 @@
             <button class="add-button bold">Submit</button>
         </form>
     </header>
-    <?php if (assignments) { ?>
+    <?php if ($assignments) { ?>
     <?php foreach ($assignments as $assignment): ?>
     <div class="list__row">
         <div class="list__item">
