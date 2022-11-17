@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include('view/header.php'); ?>
 
 <?php if($courses) { ?>
     <section id="list" class="list">
@@ -44,4 +44,4 @@
 <br>
 <p><a href=".">View &amp; Add Assignments</a></p>
 
-<?php include('footer.php'); ?>
+<?php include('view/footer.php'); ?>

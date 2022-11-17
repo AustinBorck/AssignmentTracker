@@ -22,7 +22,7 @@ if (!$action) {
 }
 
 switch ($action) {
-    case 'lsit_courses':
+    case 'list_courses':
         $courses = get_courses();
         include('view/course_list.php');
         break;
