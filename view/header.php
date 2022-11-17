@@ -7,5 +7,4 @@
         <title>Assignment Tracker</title>
     </head>
 <body>
-    
-</body>
+    <main class="main">
