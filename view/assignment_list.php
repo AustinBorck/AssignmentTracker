@@ -53,4 +53,29 @@
     <?php } ?>
 </section>
 
+<section id="add" class="add">
+    <h2>Add Assignment</h2>
+    <form action="." method="post" id="add__form" class="add__form">
+        <input type="hidden" name="action" value="add_assignment">
+        <div class="add__inputs">
+            <label for="">Course: </label>
+            <select name="course_id" id="" required>
+                <option value="">Please Select</option>
+                <?php foreach ($courses as $course): ?>
+                <option value="<?= $course['courseID']; ?>">
+                    <?= $course['courseName']; ?>
+                </option>
+                <?php endforeach; ?>
+            </select>
+            <label for="">Description: </label>
+            <input type="text" name="description" maxLength="120" placeholder="Description" required>
+        </div>
+        <div class="add__addItem">
+            <button class="add-button bold">Add</button>
+        </div>
+    </form>
+</section>
+<br>
+<p><a href=".?action=list_courses">View/Edit courses</a></p>
+
 <?php include('view/footer.php'); ?>
